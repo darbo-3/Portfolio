@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaCss3, FaHtml5, FaJs, FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiGit, SiGithub, SiMongodb, SiPostman, SiReact, SiTailwindcss, SiTsnode, SiVscodium } from 'react-icons/si';
+import { SiExpress, SiGit, SiGithub, SiMongodb, SiPostman, SiReact, SiTailwindcss, SiTsnode, SiVercel, SiVscodium } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 import { SiTypescript } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri"
+import { RiVercelFill } from 'react-icons/ri';
 const Experience = () => {
     const icons = [
         { name: 'HTML', icon: <FaHtml5 className='text-orange-400' size={'33'}  />, link: 'https://html.spec.whatwg.org/' },
@@ -21,6 +22,7 @@ const Experience = () => {
         { name: 'Postman', icon: <SiPostman className='text-orange-500' size={'33'}  />, link: 'https://www.postman.com/' },
         { name: 'Git', icon: <SiGit className='text-orange-400' size={'33'}  />, link: 'https://git-scm.com/' },
         { name: 'Github', icon: <SiGithub className='text-white' size={'33'}  />, link: 'https://github.com/'},
+        { name: 'Vercel', icon: <RiVercelFill className='text-white' size={'33'}  />, link: 'https://github.com/'},
     ]
     return (
         <motion.section
