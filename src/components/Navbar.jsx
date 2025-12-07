@@ -91,7 +91,7 @@ const Navbar = () => {
 
       <section className="flex items-center gap-3">
         <ScrollLink
-          className="py-2 px-4 hidden md:flex rounded-2xl bg-slate-100 text-black font-medium text-sm cursor-pointer hover:bg-white transition-colors duration-300"
+          className="py-2 px-4 rounded-2xl bg-slate-100 text-black font-medium text-sm cursor-pointer hover:bg-white transition-colors duration-300"
           to='contact'
           smooth={true}
           duration={600}
