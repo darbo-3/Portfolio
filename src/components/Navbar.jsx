@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion"
 const Navbar = () => {
   const links = [
     { id: 1, name: "Home", to: 'home' },
-    // { id: 2, name: "About", to: 'about' },
     { id: 3, name: "Experience", to: 'experience' },
     { id: 4, name: "Projects", to: 'projects' },
     { id: 4, name: "Contact", to: 'contact' },

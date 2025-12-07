@@ -51,20 +51,6 @@ const Projects = () => {
                                 ))}
                             </div>
 
-                            {/* Optional: Add project description */}
-                            {/* <p className="text-sm text-slate-400">
-            {project.description}
-        </p> */}
-
-                            {/* Optional: Add project links */}
-                            {/* <div className="mt-4 flex gap-3">
-            <a href={project.liveLink} className="text-sm text-sky-400 hover:text-sky-300">
-                Live Demo →
-            </a>
-            <a href={project.githubLink} className="text-sm text-slate-400 hover:text-slate-300">
-                GitHub
-            </a>
-        </div> */}
                         </motion.div>
                     ))}
                 </div>
