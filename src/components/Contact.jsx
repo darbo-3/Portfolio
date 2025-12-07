@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { useEffect } from 'react'
-import dotenv from 'dotenv'
-dotenv.config()
 
 const Contact = () => {
     const [formData, setFormData] = useState({
