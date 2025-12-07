@@ -83,8 +83,8 @@ const Contact = () => {
                     Contact Me
                 </h1>
 
-                <form onSubmit={handleSubmit} className='w-5/6 md:w-1/2 lg:w-1/3 flex flex-col gap-5'>
-                    <div className='flex flex-col gap-2'>
+                <form onSubmit={handleSubmit} className='w-5/6 md:w-1/2 lg:w-1/3 flex flex-col gap-8'>
+                    <div className='flex flex-col gap-3'>
                         <label className='text-gray-500 text-xs ml-1'>Your name</label>
                         <input
                             type="text"
@@ -93,11 +93,11 @@ const Contact = () => {
                             onChange={handleChange}
                             placeholder='name'
                             required
-                            className='py-2 px-4 rounded-md border border-slate-900 shadow focus:outline-none focus:ring-2 ring-purple-500 bg-gray-900 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
                         />
                     </div>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-3'>
                         <label className='text-gray-500 text-xs ml-1'>Your email</label>
                         <input
                             type="email"
@@ -106,11 +106,11 @@ const Contact = () => {
                             onChange={handleChange}
                             placeholder='email'
                             required
-                            className='py-2 px-4 rounded-md border border-slate-900 shadow focus:outline-none focus:ring-2 ring-purple-500 bg-gray-900 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
                         />
                     </div>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-3'>
                         <label className='text-gray-500 text-xs ml-1'>Say something</label>
                         <textarea
                             name="message"
@@ -119,7 +119,7 @@ const Contact = () => {
                             placeholder='your message'
                             required
                             rows="4"
-                            className='py-2 px-4 rounded-md border border-slate-900 shadow focus:outline-none focus:ring-2 ring-purple-500 bg-gray-900 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
                         />
                     </div>
 

@@ -11,7 +11,7 @@ const Home = () => {
         whileInView={{opacity: 1, y: 0}}
         id='home' className='w-11/12 md:w-9/11 mx-auto h-screen flex md:flex-row flex-col justify-between items-center mt-20 border-b border-slate-800 p-6'>
             <section className='flex flex-col items-start gap-2 w-full flex-2'>
-                <h1 className='text-3xl md:text-6xl font-bold text-slate-300'>Full stack <span className=' bg-gradient-to-r from-sky-500 via-purple-500 font-black to-sky-600 bg-clip-text text-transparent'>MERN</span> Developer</h1>
+                <h1 className='text-4xl md:text-6xl font-bold text-slate-300'>Full stack <span className=' bg-gradient-to-r from-sky-500 via-purple-500 font-black to-sky-600 bg-clip-text text-transparent'>MERN</span> Developer</h1>
                 <p className='text-gray-300/90 ml-1 text-[12px] leading-6 md:w-[800px] line-clamp-6 md:line-clamp-none tracking-wider font-normal '>Hey! I’m Darbaz, a web developer passionate about building beautiful and functional digital experiences. I work with the MERN stack & latest version of NextJs and TailwindCSS to create fast, responsive, and modern websites and web apps. I love turning ideas into reality through clean code and creative design</p>
                 <ScrollLink to='contact' smooth={true} duration={500} className='bg-gradient-to-br cursor-pointer hover:scale-110 transition duration-300 hover:brightness-105 mt-2  from-sky-500 via-purple-500 to-sky-600 py-2 px-2 rounded-lg text-xs'>Get in touch</ScrollLink>
             </section>

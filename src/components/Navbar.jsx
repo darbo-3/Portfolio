@@ -9,6 +9,7 @@ const Navbar = () => {
     // { id: 2, name: "About", to: 'about' },
     { id: 3, name: "Experience", to: 'experience' },
     { id: 4, name: "Projects", to: 'projects' },
+    { id: 4, name: "Contact", to: 'contact' },
   ]
 
   const [open, setOpen] = useState(false)
@@ -90,7 +91,7 @@ const Navbar = () => {
       </section>
 
       <section className="flex items-center gap-3">
-        <ScrollLink
+        {/* <ScrollLink
           className="py-2 px-4 rounded-2xl bg-slate-100 text-black font-medium text-sm cursor-pointer hover:bg-white transition-colors duration-300"
           to='contact'
           smooth={true}
@@ -98,7 +99,7 @@ const Navbar = () => {
           onClick={() => setActiveLink('contact')}
         >
           Get in touch
-        </ScrollLink>
+        </ScrollLink> */}
         <motion.button
           onClick={() => setOpen(!open)}
           className="flex md:hidden bg-slate-900/40 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
