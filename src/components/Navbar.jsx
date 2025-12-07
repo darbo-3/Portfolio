@@ -53,12 +53,12 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.50 }}
-      className='fixed top-0 left-0 right-0 flex justify-between md:justify-around w-full text-white bg-gray-900/30 py-4 px-8 md:px-8 items-center border-b border-gray-800 backdrop-blur-xl z-50'
+      className='fixed top-0 left-0 right-0 flex justify-between md:justify-around text-white bg-gray-900/30 py-4 px-8 md:px-8 items-center border-b border-gray-800 backdrop-blur-xl z-50'
     >
       <section>
         <ScrollLink
           to='home'
-          className="text-xl md:text-2xl bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-medium"
+          className="text-2xl md:text-2xl bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold"
           smooth={true}
           duration={500}
           onClick={() => setActiveLink('home')}
@@ -90,7 +90,7 @@ const Navbar = () => {
         ))}
       </section>
 
-      <section className="flex items-center gap-3">
+      <section >
         {/* <ScrollLink
           className="py-2 px-4 rounded-2xl bg-slate-100 text-black font-medium text-sm cursor-pointer hover:bg-white transition-colors duration-300"
           to='contact'
