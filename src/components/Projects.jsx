@@ -15,7 +15,7 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             id="projects"
-            className="w-11/12 mx-auto py-20 text-white border-b border-slate-800 flex justify-center items-center h-screen"
+            className="w-11/12 mx-auto py-20 text-white border-b border-slate-800 flex justify-center items-center min-h-screen"
         >
             <div className="flex flex-col items-center gap-4">
                 <h1 className="text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold">
