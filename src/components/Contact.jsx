@@ -49,7 +49,6 @@ const Contact = () => {
                 to_email: 'darborzgar7@gmail.com'
             }
 
-            // Send email using EmailJS
 
                 const result = await emailjs.send(
                     import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -76,7 +75,7 @@ const Contact = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             id='contact'
-            className='w-full h-screen flex justify-center items-center text-white border-b border-slate-800'
+            className='w-full min-h-screen flex justify-center items-center text-white border-b border-slate-800'
         >
             <div className='w-full flex justify-center items-center flex-col'>
                 <h1 className="text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold">

@@ -6,7 +6,7 @@ import asiaProject from '../images/institutemanagement.png'
 const Projects = () => {
     const projects = [
         { name: "Ecommerce Web application", techStack: ['Mongodb', 'ExpressJs', 'React', 'NodeJs', 'Tailwindcss'], image: puvoProject },
-        {name: "Institute Management System", techStack: ['Mongodb', 'ExpressJs', 'React', 'NodeJs', 'Tailwindcss', 'Shadcn/ui'], image: asiaProject}
+        {name: "Institute Management System", techStack: ['Mongodb', 'ExpressJs', 'React', 'NodeJs', 'Tailwindcss', 'Shadcn/ui'], image: asiaProject},
     ]
 
     return (
@@ -41,13 +41,12 @@ const Projects = () => {
                             <h2 className="font-semibold text-xl mb-2">
                                 {project.name}
                             </h2>
-
                             <div className="flex flex-wrap gap-2 mb-3">
-                                <h1>Tech stack used:</h1>
+                                <h1 className='text-zinc-300/90 text-sm'>Tech stack used:</h1>
                                 {project.techStack.map((tech) => (
                                     <span
                                         key={tech}
-                                        className="px-3 py-1 text-xs bg-slate-800 rounded-full text-slate-300"
+                                        className="px-2 py-1 border border-slate-900/80 font-medium rounded-full text-xs text-zinc-400/80"
                                     >
                                          {tech}
                                     </span>
