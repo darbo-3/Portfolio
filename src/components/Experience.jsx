@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { FaCss3, FaHtml5, FaJs, FaNodeJs } from "react-icons/fa";
 import { SiExpress, SiGit, SiGithub, SiMongodb, SiPostman, SiReact, SiTailwindcss, SiTsnode, SiVercel, SiVscodium } from 'react-icons/si';
@@ -34,8 +33,8 @@ const Experience = () => {
             <div className='flex justify-center items-center flex-col gap-3'>
                 <h1 className='text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 font-bold to-sky-600 bg-clip-text text-transparent'>My Experience</h1> 
                 <div className='grid grid-cols-3 md:grid-cols-6 gap-10 py-3 px-5 rounded-md shadow border border-slate-900'>
-                    {icons.map((icon) => (
-                        <div className='flex flex-col items-center gap-5 p-2'>
+                    {icons.map((icon, index) => (
+                        <div key={index} className='flex flex-col items-center gap-5 p-2'>
                             <a href={icon.link} className='text-sm flex flex-col items-center gap-5' target='_blank'>
                             <p>
                                 {icon.icon}

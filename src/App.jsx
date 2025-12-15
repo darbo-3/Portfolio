@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
+import Services from './components/Services';
 import LiquidEther from './LiquidEther';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <main className='w-full'>
           <Home />
           <Experience />
+          <Services />
           <Projects />
           <Contact />
           <Footer />

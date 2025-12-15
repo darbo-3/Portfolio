@@ -6,9 +6,10 @@ import { AnimatePresence, motion } from "framer-motion"
 const Navbar = () => {
   const links = [
     { id: 1, name: "Home", to: 'home' },
-    { id: 3, name: "Experience", to: 'experience' },
+    { id: 2, name: "Experience", to: 'experience' },
+    { id: 3, name: "Services", to: 'services' },
     { id: 4, name: "Projects", to: 'projects' },
-    { id: 4, name: "Contact", to: 'contact' },
+    { id: 5, name: "Contact", to: 'contact' },
   ]
 
   const [open, setOpen] = useState(false)
@@ -52,7 +53,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.50 }}
-      className='fixed top-0 left-0 right-0 flex justify-between md:justify-around text-white bg-gray-900/30 py-4 px-8 md:px-8 items-center border-b border-gray-800 backdrop-blur-xl z-50'
+      className='fixed top-0 left-0 right-0 flex justify-between md:justify-around text-white bg-slate-900/10 py-4 px-8 md:px-8 items-center border-b border-gray-800 backdrop-blur-xl z-50'
     >
       <section>
         <ScrollLink
@@ -90,15 +91,6 @@ const Navbar = () => {
       </section>
 
       <section >
-        {/* <ScrollLink
-          className="py-2 px-4 rounded-2xl bg-slate-100 text-black font-medium text-sm cursor-pointer hover:bg-white transition-colors duration-300"
-          to='contact'
-          smooth={true}
-          duration={600}
-          onClick={() => setActiveLink('contact')}
-        >
-          Get in touch
-        </ScrollLink> */}
         <motion.button
           onClick={() => setOpen(!open)}
           className="flex md:hidden bg-slate-900/40 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
@@ -114,7 +106,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
-            className="absolute md:hidden overflow-hidden backdrop-blur-xl flex flex-col gap-4 p-5 top-full left-0 right-0 bg-slate-900 border-b border-slate-800/50 z-50"
+            className="absolute md:hidden overflow-hidden backdrop-blur-xl flex flex-col gap-4 p-5 top-full left-0 right-0 bg-slate-950 border-b border-slate-800/50 z-50"
           >
             {links.map((link) => (
               <ScrollLink

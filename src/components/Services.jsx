@@ -1,0 +1,56 @@
+import { DatabaseZap, Laptop, Layers } from 'lucide-react'
+import { SiInternetcomputer } from "react-icons/si";
+import React from 'react'
+
+const Services = () => {
+    const services = [
+        {
+            id: 1,
+            name: "Frontend Web Development",
+            icon: <Laptop />,
+            description: "I design and build responsive, user-friendly interfaces using modern web technologies to deliver engaging and accessible user experiences."
+        },
+        {
+            id: 2,
+            name: "Backend Web Development",
+            icon: <DatabaseZap />,
+            description: "I develop secure, scalable server-side applications, APIs, and databases that ensure reliable performance and efficient data management."
+        },
+        {
+            id: 3,
+            name: "Full Stack Development",
+            icon: <SiInternetcomputer size={22}/>,
+            description: "I deliver complete web solutions by integrating intuitive frontends with robust backends, ensuring seamless functionality from concept to deployment."
+        }
+    ];
+  return (
+    <div id='services' className='min-h-screen w-11/12 mx-auto border-b border-slate-800 flex justify-center items-center text-white flex-col'>
+          <h1 className='text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 font-bold to-sky-600 bg-clip-text text-transparent'>My Services</h1> 
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full'>
+                {services.map((service) => (
+                    <div
+                        key={service.id}
+                        className="py-5 px-4 border border-slate-900 rounded-md
+             hover:border-purple-500/40 hover:bg-slate-900/40
+             transition duration-300 min-h-[180px]"
+                    >
+                        <div className="flex items-center justify-between gap-3 mb-2">
+                            <h1 className="font-medium text-lg">{service.name}</h1>
+                            <div className="py-2 px-4 rounded border border-purple-500/20 bg-purple-950/30 text-purple-400 text-2xl">
+                                {service.icon}
+                            </div>
+                        </div>
+
+                        <div className="mt-4">
+                            <p className="text-gray-300/70 text-sm leading-relaxed tracking-wide">
+                                {service.description}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+        </div>
+    </div>
+  )
+}
+
+export default Services
