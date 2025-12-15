@@ -1,6 +1,6 @@
 import { DatabaseZap, Laptop, Layers } from 'lucide-react'
 import { SiInternetcomputer } from "react-icons/si";
-import React from 'react'
+import { motion } from 'framer-motion';
 
 const Services = () => {
     const services = [
@@ -24,7 +24,11 @@ const Services = () => {
         }
     ];
   return (
-    <div id='services' className='min-h-screen w-11/12 mx-auto border-b border-slate-800 flex justify-center items-center text-white flex-col'>
+    <motion.div 
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+    id='services' className='min-h-screen my-5 w-11/12 mx-auto border-b border-slate-800 flex justify-center items-center text-white flex-col'>
           <h1 className='text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 font-bold to-sky-600 bg-clip-text text-transparent'>My Services</h1> 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full'>
                 {services.map((service) => (
@@ -49,7 +53,7 @@ const Services = () => {
                     </div>
                 ))}
         </div>
-    </div>
+    </motion.div>
   )
 }
 

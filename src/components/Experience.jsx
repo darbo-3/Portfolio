@@ -26,7 +26,6 @@ const Experience = () => {
     return (
         <motion.section
             initial={{ opacity: 0, y: -100 }}
-            // animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             id='experience' className='w-11/12 mx-auto min-h-screen flex justify-center items-center text-white border-b border-slate-800'>
