@@ -21,7 +21,7 @@ const Experience = () => {
         { name: 'Postman', icon: <SiPostman className='text-orange-500' size={'33'}  />, link: 'https://www.postman.com/' },
         { name: 'Git', icon: <SiGit className='text-orange-400' size={'33'}  />, link: 'https://git-scm.com/' },
         { name: 'Github', icon: <SiGithub className='text-white' size={'33'}  />, link: 'https://github.com/'},
-        { name: 'Vercel', icon: <RiVercelFill className='text-white' size={'33'}  />, link: 'https://github.com/'},
+        { name: 'Vercel', icon: <RiVercelFill className='text-white' size={'33'}  />, link: 'https://vercel.com'},
     ]
     return (
         <motion.section
