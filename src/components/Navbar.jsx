@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link as ScrollLink } from 'react-scroll'
-import { X, Menu } from 'lucide-react'
+import { X, Menu, MenuIcon } from 'lucide-react'
 import { AnimatePresence, motion } from "framer-motion"
 
 const Navbar = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
       <section>
         <ScrollLink
           to='home'
-          className="text-2xl md:text-2xl bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold"
+          className="text-xl font-black md:text-2xl bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent"
           smooth={true}
           duration={500}
           onClick={() => setActiveLink('home')}
@@ -93,7 +93,7 @@ const Navbar = () => {
       <section >
         <motion.button
           onClick={() => setOpen(!open)}
-          className="flex md:hidden bg-slate-900/40 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
+          className="flex md:hidden bg-slate-900/30 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </motion.button>

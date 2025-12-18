@@ -27,7 +27,7 @@ const Projects = () => {
                         <motion.div
                             key={project.name}
                             whileHover={{ y: -5 }}
-                            className="rounded-lg border border-slate-900 bg-slate-900/30 hover:bg-slate-900/50 transition-all duration-300 p-4 group cursor-pointer"
+                            className="rounded-lg border min-h-full border-slate-900 bg-slate-900/30 hover:bg-slate-900/50 transition-all duration-300 p-4 group cursor-pointer"
                         >
                             <div className="overflow-hidden rounded-md mb-4">
                                 <img
