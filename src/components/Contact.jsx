@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { useEffect } from 'react'
+import { Loader, Loader2, Loader2Icon } from 'lucide-react'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ const Contact = () => {
             const timer = setTimeout(() => {
                 setSuccessMessage('')
                 setErrorMessage('')
-            }, 2000) 
+            }, 2000)
 
             return () => clearTimeout(timer)
         }
@@ -50,16 +51,16 @@ const Contact = () => {
             }
 
 
-                const result = await emailjs.send(
-                    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                    templateParams,
-                    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-                ) 
-            
+            const result = await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                templateParams,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )
+
 
             setSuccessMessage('Sent')
-            
+
         } catch (error) {
             console.log(error)
             setErrorMessage('Failed to send message. Please try again.')
@@ -141,7 +142,7 @@ const Contact = () => {
                             disabled={isLoading}
                             className={`bg-gradient-to-br cursor-pointer hover:scale-110 transition duration-300 hover:brightness-105 mt-2 from-sky-500 via-purple-500 to-sky-600 py-2 px-6 rounded-lg text-sm ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
                         >
-                            {isLoading ? 'Sending...' : 'Send message'}
+                            {isLoading ? <Loader size={'12'} className='animate-spin transition-all duration-500 text-gray-200'/> : "Send message"}
                         </button>
                     </div>
                 </form>
