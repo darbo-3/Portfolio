@@ -1,3 +1,4 @@
+import Snowfall from 'react-snowfall';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ const App = () => {
       <div style={{ position: '', zIndex: 10 }}>
         <Navbar /> 
         <main className='w-full'>
+          <Snowfall />
           <Home />
           <Experience />
           <Services />
