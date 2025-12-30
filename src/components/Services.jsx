@@ -34,7 +34,7 @@ const Services = () => {
                 {services.map((service) => (
                     <div
                         key={service.id}
-                        className="py-5 px-4 border border-slate-900 rounded-md
+                        className="py-5 px-4 border-2 border-sky-900/40 rounded-md
              hover:border-sky-500/50 hover:bg-slate-900/40
              transition duration-300 min-h-[180px]"
                     >
