@@ -18,9 +18,7 @@ const Projects = () => {
             className="w-11/12 mx-auto py-20 text-white border-b border-slate-800 flex justify-center items-center min-h-screen"
         >
             <div className="flex flex-col items-center gap-4">
-                <h1 className="text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold">
-                    My Projects
-                </h1>
+                <h1 className='text-4xl m-5 font-bold text-sky-500'>My Projects</h1> 
 
                 <div className={`w-full p-6 grid grid-cols-1 md:grid-cols-2 ${projects.length === 1 ? "lg:grid-cols-1" : "lg:grid-cols-3 "} gap-5 place-items-center`}>
                     {projects.map((project) => (

@@ -79,9 +79,7 @@ const Contact = () => {
             className='w-full min-h-screen flex justify-center items-center text-white border-b border-slate-800'
         >
             <div className='w-full flex justify-center items-center flex-col'>
-                <h1 className="text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent font-bold">
-                    Contact Me
-                </h1>
+                <h1 className='text-4xl m-5 font-bold text-sky-500'>Contact Me</h1> 
 
                 <form onSubmit={handleSubmit} className='w-5/6 md:w-1/2 lg:w-1/3 flex flex-col gap-8'>
                     <div className='flex flex-col gap-3'>
@@ -93,7 +91,7 @@ const Contact = () => {
                             onChange={handleChange}
                             placeholder='name'
                             required
-                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-sky-500 text-white'
                         />
                     </div>
 
@@ -106,7 +104,7 @@ const Contact = () => {
                             onChange={handleChange}
                             placeholder='email'
                             required
-                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-sky-500 text-white'
                         />
                     </div>
 
@@ -119,7 +117,7 @@ const Contact = () => {
                             placeholder='your message'
                             required
                             rows="4"
-                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-purple-500 text-white'
+                            className='py-2 px-4 rounded-lg border border-slate-900/80 shadow focus:outline-none focus:ring-2 ring-sky-500 text-white'
                         />
                     </div>
 
@@ -140,7 +138,7 @@ const Contact = () => {
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className={`bg-gradient-to-br cursor-pointer hover:scale-110 transition duration-300 hover:brightness-105 mt-2 from-sky-500 via-purple-500 to-sky-600 py-2 px-6 rounded-lg text-sm ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                            className={`bg-gradient-to-br cursor-pointer hover:scale-110 transition duration-300 hover:brightness-105 mt-2 bg-sky-500 py-2 px-6 rounded-lg text-sm ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
                         >
                             {isLoading ? <Loader size={'12'} className='animate-spin transition-all duration-500 text-gray-200'/> : "Send message"}
                         </button>

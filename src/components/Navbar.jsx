@@ -56,28 +56,9 @@ const Navbar = () => {
       className='fixed top-0 left-0 right-0 flex justify-between md:justify-around text-white bg-slate-900/10 py-4 px-8 md:px-8 items-center border-b border-gray-800 backdrop-blur-xl z-50'
     >
       <section className="flex items-center gap">
-        <svg className="mt-2" width="35" height="35" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="30" cy="55" rx="15" ry="3" fill="black" opacity="0.2" />
-          <path d="M15 35 L30 10 L45 35 Z" fill="#C41E3A" />
-          <path d="M15 35 L30 10 L22.5 22.5 Z" fill="#A01020" opacity="0.5" />
-          <path d="M30 10 L45 35 L37.5 22.5 Z" fill="#E63946" opacity="0.4" />
-          <ellipse cx="30" cy="35" rx="17" ry="4" fill="white" />
-          <ellipse cx="30" cy="35" rx="17" ry="4" fill="#F0F0F0" opacity="0.6" />
-          <ellipse cx="20" cy="35" rx="3" ry="2.5" fill="white" opacity="0.8" />
-          <ellipse cx="26" cy="35.5" rx="2.5" ry="2" fill="white" opacity="0.7" />
-          <ellipse cx="34" cy="35.5" rx="2.5" ry="2" fill="white" opacity="0.7" />
-          <ellipse cx="40" cy="35" rx="3" ry="2.5" fill="white" opacity="0.8" />
-          <circle cx="30" cy="8" r="5" fill="white" />
-          <circle cx="30" cy="8" r="5" fill="#F0F0F0" opacity="0.7" />
-          <circle cx="28" cy="7" r="1.5" fill="white" opacity="0.9" />
-          <circle cx="32" cy="7.5" r="1.2" fill="white" opacity="0.8" />
-          <circle cx="30" cy="9.5" r="1.3" fill="#E0E0E0" opacity="0.6" />
-          <path d="M28 18 Q30 20 32 18" stroke="#8B1020" stroke-width="0.5" opacity="0.4" fill="none" />
-          <path d="M26 24 Q30 27 34 24" stroke="#8B1020" stroke-width="0.5" opacity="0.3" fill="none" />
-        </svg>
         <ScrollLink
           to='home'
-          className="text-xl font-black md:text-2xl bg-gradient-to-r from-sky-500 via-purple-500 to-sky-600 bg-clip-text text-transparent"
+          className="text-xl font-black md:text-2xl text-sky-500"
           smooth={true}
           duration={500}
           onClick={() => setActiveLink('home')}
@@ -100,8 +81,8 @@ const Navbar = () => {
               setOpen(false)
             }}
             className={`cursor-pointer py-2 px-4 rounded-lg transition-colors duration-300 ${activeLink === link.to
-                ? 'text-purple-500 bg-slate-900/30'
-                : 'text-white hover:text-purple-400'
+                ? 'text-sky-500 bg-slate-900/30'
+                : 'text-white hover:text-sky-400'
               }`}
           >
             {link.name}
@@ -138,7 +119,7 @@ const Navbar = () => {
                   setOpen(false)
                 }}
                 className={`cursor-pointer text-sm w-full py-3 px-4 rounded-lg transition-colors duration-300 ${activeLink === link.to
-                    ? 'text-purple-500'
+                    ? 'text-sky-500'
                     : 'text-white hover:bg-slate-800/10'
                   }`}
               >

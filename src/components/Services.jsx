@@ -29,18 +29,18 @@ const Services = () => {
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
     id='services' className='min-h-screen my-5 w-11/12 mx-auto border-b border-slate-800 flex justify-center items-center text-white flex-col'>
-          <h1 className='text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 font-bold to-sky-600 bg-clip-text text-transparent'>My Services</h1> 
+          <h1 className='text-4xl m-5 font-bold text-sky-500'>My Services</h1>  
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full'>
                 {services.map((service) => (
                     <div
                         key={service.id}
                         className="py-5 px-4 border border-slate-900 rounded-md
-             hover:border-purple-500/40 hover:bg-slate-900/40
+             hover:border-sky-500/50 hover:bg-slate-900/40
              transition duration-300 min-h-[180px]"
                     >
                         <div className="flex items-center justify-between gap-3 mb-2">
                             <h1 className="font-medium text-lg">{service.name}</h1>
-                            <div className="py-2 px-4 rounded border border-purple-500/20 bg-purple-950/30 text-purple-400 text-2xl">
+                            <div className="py-2 px-4 rounded border border-sky-500/80 bg-sky-950/30 text-sky-400 text-2xl">
                                 {service.icon}
                             </div>
                         </div>

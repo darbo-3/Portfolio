@@ -30,7 +30,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             id='experience' className='w-11/12 mx-auto min-h-screen flex justify-center items-center text-white border-b border-slate-800'>
             <div className='flex justify-center items-center flex-col gap-3'>
-                <h1 className='text-4xl m-5 bg-gradient-to-r from-sky-500 via-purple-500 font-bold to-sky-600 bg-clip-text text-transparent'>My Experience</h1> 
+                <h1 className='text-4xl m-5 font-bold text-sky-500'>My Experience</h1> 
                 <div className='grid grid-cols-3 md:grid-cols-6 gap-10 py-3 px-5 rounded-md shadow border border-slate-900'>
                     {icons.map((icon, index) => (
                         <div key={index} className='flex flex-col items-center gap-5 p-2'>
