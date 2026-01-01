@@ -39,7 +39,7 @@ const Services = () => {
              transition duration-300 min-h-[180px]"
                     >
                         <div className="flex items-center justify-between gap-3 mb-2">
-                            <h1 className="font-medium text-lg">{service.name}</h1>
+                            <h1 className="font-bold text-lg uppercase">{service.name}</h1>
                             <div className="py-2 px-4 rounded border border-sky-500/80 bg-sky-950/30 text-sky-400 text-2xl">
                                 {service.icon}
                             </div>

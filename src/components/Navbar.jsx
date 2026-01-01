@@ -119,7 +119,7 @@ const Navbar = () => {
                   setOpen(false)
                 }}
                 className={`cursor-pointer text-sm w-full py-3 px-4 rounded-lg transition-colors duration-300 ${activeLink === link.to
-                    ? 'text-sky-500'
+                    ? 'text-sky-500 bg-slate-900/40'
                     : 'text-white hover:bg-slate-800/10'
                   }`}
               >
