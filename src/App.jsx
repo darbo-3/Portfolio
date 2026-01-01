@@ -22,8 +22,8 @@ const App = () => {
         <main className='w-full'>
           <Snowfall/>
           <Home />
-          <Experience />
           <Services />
+          <Experience />
           <Projects />
           <Contact />
           <Footer />

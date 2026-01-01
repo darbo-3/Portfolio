@@ -42,28 +42,32 @@ const Contact = () => {
         setSuccessMessage('')
 
         try {
-
-            const templateParams = {
-                from_name: formData.name,
-                from_email: formData.email,
-                message: formData.message,
-                to_email: 'darborzgar7@gmail.com'
-            }
-
-
-            const result = await emailjs.send(
+            const response = await emailjs.send(
                 import.meta.env.VITE_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                templateParams,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message
+                },
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
 
-
-            setSuccessMessage('Sent')
+            if (response.status === 200) {
+                setSuccessMessage('Sent')
+                setFormData({ name: '', email: '', message: '' })
+            } else {
+                setErrorMessage('Failed to send message.')
+            }
 
         } catch (error) {
-            console.log(error)
-            setErrorMessage('Failed to send message. Please try again.')
+            if (error?.status === 200) {
+                setSuccessMessage('Sent')
+                setFormData({ name: '', email: '', message: '' })
+            } else {
+                console.error('EmailJS error:', error)
+                setErrorMessage('Failed to send message. Please try again.')
+            }
         } finally {
             setIsLoading(false)
         }
