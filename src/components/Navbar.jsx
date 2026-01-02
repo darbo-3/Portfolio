@@ -93,7 +93,7 @@ const Navbar = () => {
       <section >
         <motion.button
           onClick={() => setOpen(!open)}
-          className="flex md:hidden bg-slate-900/10 hover:bg-slate-900 border cursor-pointer border-slate-900 transition duration-300 py-2 px-2 rounded-lg"
+          className="flex md:hidden bg-slate-900/40 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
         >
           {open ? <X size={20} /> : <Ellipsis size='20'/>}
         </motion.button>
