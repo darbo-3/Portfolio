@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link as ScrollLink } from 'react-scroll'
-import { X, Menu, MenuIcon } from 'lucide-react'
+import { X, Menu, MenuIcon, EllipsisVertical, Ellipsis } from 'lucide-react'
 import { AnimatePresence, motion } from "framer-motion"
 
 const Navbar = () => {
@@ -93,9 +93,9 @@ const Navbar = () => {
       <section >
         <motion.button
           onClick={() => setOpen(!open)}
-          className="flex md:hidden bg-slate-900/30 hover:bg-slate-900 border cursor-pointer border-slate-800 transition duration-300 py-2 px-2 rounded-lg"
+          className="flex md:hidden bg-slate-900/10 hover:bg-slate-900 border cursor-pointer border-slate-900 transition duration-300 py-2 px-2 rounded-lg"
         >
-          {open ? <X size={20} /> : <Menu size={20} />}
+          {open ? <X size={20} /> : <Ellipsis size='20'/>}
         </motion.button>
       </section>
 
